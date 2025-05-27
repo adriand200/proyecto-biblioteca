@@ -80,6 +80,7 @@ def devolver_libro(): # Devolver un libro prestado
 def agregar_libro(): # Agregar un nuevo libro a la biblioteca
     titulo = input("Escribe el título del libro: ")
     autor = input("Escribe el autor del libro: ")
+    codigo=input("escribe el codigo del libro")
     paginas = int(input("Escribe el número de páginas: "))
     año = int(input("Escribe el año de publicación: "))
     etiquetas = input("Escribe las etiquetas: ")
@@ -87,6 +88,7 @@ def agregar_libro(): # Agregar un nuevo libro a la biblioteca
 
     Biblioteca["Generos"][genero_agregado]["Libros"][titulo] = { # Acceder a los géneros y agrega el libro
         "Author": autor,
+        "CODIGO": codigo,
         "Paginas": paginas,
         "Año": año,
         "etiquetas": etiquetas
